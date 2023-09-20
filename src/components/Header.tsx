@@ -5,8 +5,8 @@ import { NavigationMenuDemo } from "./ui/NavComponent";
 
 export function Header() {
     return (
-        <header className='flex items-center justify-between w-full h-14'>
-            <div className="items-center gap-6 hidden md:block">
+        <header className='flex flex-col md:flex-row items-center justify-between w-full h-14'>
+            <div className="items-center gap-6 flex">
                 <NavigationMenuDemo />
             </div>
 

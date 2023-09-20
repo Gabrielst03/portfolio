@@ -77,7 +77,7 @@ export function NavigationMenuDemo() {
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="hidden md:block">
                     <Link href="https://github.com/gabrielst03" target="_blank" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             <GitHubLogoIcon className="mr-2" />
