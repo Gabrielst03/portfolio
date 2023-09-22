@@ -44,7 +44,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavigationMenuDemo() {
     return (
         <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="mb-3">
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -53,10 +53,10 @@ export function NavigationMenuDemo() {
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="-ml-32">
                     <NavigationMenuTrigger>Sobre</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    <NavigationMenuContent className="">
+                        <ul className="grid grid-cols-1 w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                             {components.map((component) => (
                                 <ListItem
                                     key={component.title}
